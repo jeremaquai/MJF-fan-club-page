@@ -1,0 +1,205 @@
+/*
+Coded by Jeremaquai
+
+CSS Section Layout
+
+1. Global Styles
+2. Typography Styles
+3. Module Styles
+4. Component Styles
+*/
+
+/* 1. Global Styles */
+
+body {
+    font-size: 16px;
+    color: black;
+    background-image: url("../images/mjf_burberry_pattern_by_hellmen45_dezdebg.png");
+    background-size: contain;
+}
+
+/* 2. Typography Syles */
+
+a {
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+/* 3. Module Styles */
+
+header {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: antiquewhite;
+}
+
+.title-line {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.photos-section {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.separation-pic,
+.fan-art-section,
+.join-us-section {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+footer {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    background-color: antiquewhite;
+    padding: 1rem;
+}
+
+/* 4. Component Styles */
+
+.header-image-container {
+   width: 40%;
+   margin: auto;
+}
+
+
+
+.h1-container {
+    width: 55%;
+    min-height: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+li {
+    margin: 1rem;
+}
+
+
+
+.mjf-photo-container,
+.fan-art-pic-container {
+    width: 40%;
+    padding: 2rem;
+}
+
+.header-image-container img,
+.mjf-photo-container img,
+.separation-pic-container img,
+.fan-art-pic-container img,
+.join-us-image-container img {
+    max-width: 100%;
+}
+
+.photos-text-container {
+    padding: 2rem;
+    background-color: antiquewhite;
+    text-align: justify;
+    width: 40%;
+}
+
+.separation-pic-container,
+.join-us-image-container {
+    width: 70%;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+}
+
+.join-us-image-container {
+    margin-top: 2rem;
+}
+
+.fan-art-title,
+.join-us-text-container {
+    width: 60%;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: antiquewhite;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.fan-art-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* 5. Mobile Styles */
+
+@media screen and (max-width: 599px){
+    
+    .title-line {
+        flex-direction: column-reverse;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .header-image-container {
+        display: none;
+    }
+    
+    .nav ul{
+        display: block;
+        text-align: center;
+    }
+
+    .separation-pic-container {
+        width: 90%;
+    }
+
+    .mjf-photo-container,
+    .fan-art-pic-container,
+    .photos-text-container {
+        width: 80%;
+    }
+
+    .photos-text-container {
+        margin-top: 1rem;
+        position: relative;
+        bottom: 1rem;
+    }
+}
